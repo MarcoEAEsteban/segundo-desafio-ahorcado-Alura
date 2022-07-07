@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Alura 2: AHORCADO</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/sf-pixelate">
+    <link rel="stylesheet" href="estilo.css" >
+    <link rel="stylesheet" href="juego.html">
+    <link rel="stylesheet" href="menu.html">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">AHORCADO</h1>
+    </header>
+
+    <div>
+        <canvas id="canvas"></canvas>
+        <div id="usedLetters"></div>
+    </div>
+    <div id="wordContainer"></div>
+
+    <div>
+        
+        <div>
+            <button type="button" class="boton" id="startButton">Nuevo Juego</button>
+        </div> <!--recarga un nuevo juego-->
+        <div>
+            <input type="button" value="Desistir" class="boton" onclick="desistir()">
+
+        </div>
+    
+    </div>
+
+
+    <footer>
+        <p class="piePagina">Estudiante del Instructor: Chistian Velasco "alura LATAM", alumno Marco Enrique Aucaruri.</p>
+        <p class="piePagina">&copy Copyright Marco Aucaruri - 2022</p>
+
+    </footer>
+    <script src="script.js"></script>
+    <script src="palabras.js"></script>
+</body>
+
+</html>

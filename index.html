@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Alura 2: AHORCADO</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/sf-pixelate">
+    <link rel="stylesheet" href="estilo.css" >
+    <link rel="stylesheet" href="juego.html">
+    <link rel="stylesheet" href="menu.html">
+</head>
+<body onload="cargar()">
+    <header>
+        <h1 class="titulo">AHORCADO</h1>
+    </header>
+    <div>
+        <input type="button" value="Entrar" class="boton" id="startButton" onclick="jugar()">
+    </div>
+    <div >
+        <input type="button" value="Agregar Palabra" class="boton" onclick="menu()">
+    </div>
+
+    <section class="hora">
+        <div id="msg">
+            aqui va aparecer la hora
+        </div>
+        <div id="foto">
+            <img id="imagen"src='tarde.png' alt="Foto de dia">
+        </div>
+    </section>
+   
+    <footer class="pie1">
+        <p class="piePagina1">Estudiante del Instructor: Chistian Velasco "alura LATAM", alumno Marco Enrique Aucaruri.</p>
+        <p class="piePagina1">&copy Copyright Marco Aucaruri - 2022</p>
+
+    </footer>
+    <script src="script.js"></script>
+    <script src="palabras.js"></script>
+</body>
+</html>
